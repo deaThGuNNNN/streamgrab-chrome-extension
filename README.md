@@ -32,25 +32,6 @@ To run StreamGrab locally in Google Chrome:
 6.  Pin **StreamGrab** to your Chrome toolbar by clicking the extensions puzzle piece icon 🧩.
 7.  Refresh any video-playing page to allow interceptors to attach, and start downloading!
 
----
-
-## 🧠 Why Showcase This Project Publicly?
-
-Publishing browser extensions of this nature on public GitHub repositories is a highly strategic move for modern software engineers. Here is why developers showcase this caliber of work in their public portfolios:
-
-### 1. Proof of Advanced Browser & Sandbox Engineering
-Chrome Extensions built on **Manifest V3** are subject to highly strict security models, isolated execution contexts, and rigid permission boundaries. Publishing this project demonstrates a deep mastery of:
-*   **Cross-Context Message Passing**: Coordinating the lifecycle and states between separate runtime contexts: injected DOM scripts, isolated content scripts, persistent service workers (background scripts), and the ephemeral popup interface.
-*   **Network Request Interception**: Manipulating and inspecting HTTP request headers and response payloads at the browser engine level using `chrome.webRequest` or `chrome.declarativeNetRequest`.
-
-### 2. High-Performance Client-Side Systems & Cryptography
-Most downloaders offload video processing to a centralized server. StreamGrab does 100% of the network fetching, segment scheduling, decryption, and binary stitching **locally in browser RAM**. Showcasing this proves:
-*   **Client-Side Cryptography**: Demonstrating practical implementation of real-world Web Cryptography APIs to decrypt on-the-fly AES-encoded payloads.
-*   **Binary Buffer Manipulation**: Demonstrates high proficiency with low-level browser APIs (`ArrayBuffer`, `Uint8Array`, `Blob` construction) and binary stream assembly.
-*   **Bandwidth & Resource Scheduling**: Showing the ability to orchestrate parallel web workers, throttle network queues, and prevent memory bloat under heavy resource strain.
-
-### 3. Professional UX/UI Craftsmanship
-Extensions have very limited real estate. Crafting a highly responsive, modern, frosted-glass design (glassmorphism) without relying on heavy third-party libraries (like Tailwind or Bootstrap) shows strong design aesthetics and a mastery of native **Vanilla CSS & modern CSS variables**.
 
 ---
 
